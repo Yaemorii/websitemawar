@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumah Sakit Umum Mawar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/LogoMawar.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/LogoMawar.png"
+    />
+  </head>
+
+  <body>
+    <!-- Include Navbar -->
+    <div data-include="components/navbar.html"></div>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+      <div class="slides fade">
+        <img src="images/rs1.png" alt="RS Mawar Sehat 1" />
+      </div>
+      <div class="slides fade">
+        <img src="images/rs2.png" alt="RS Mawar Sehat 2" />
+      </div>
+      <div class="slides fade">
+        <img src="images/rs3.png" alt="RS Mawar Sehat 3" />
+      </div>
+
+      <!-- Tombol navigasi -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Titik indikator -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+      <h2>Keunggulan Kami</h2>
+      <p>
+        Kami berkomitmen memberikan pelayanan kesehatan terbaik dengan fasilitas
+        modern dan tenaga ahli berpengalaman.
+      </p>
+
+      <div class="values-list">
+        <div class="value-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2967/2967350.png"
+            alt="24 Jam"
+          />
+          <h3>Pelayanan 24 Jam</h3>
+          <p>Layanan darurat siap melayani pasien setiap saat tanpa henti.</p>
+        </div>
+
+        <div class="value-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/3481/3481061.png"
+            alt="Dokter"
+          />
+          <h3>Dokter Spesialis</h3>
+          <p>
+            Berbagai bidang spesialis tersedia untuk melayani kebutuhan medis
+            Anda.
+          </p>
+        </div>
+
+        <div class="value-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/9375/9375334.png"
+            alt="Pendaftaran"
+          />
+          <h3>Kualitas Mutu Pasien</h3>
+          <p>
+            Setiap prosedur dan layanan diatur untuk menjamin keselamatan pasien
+            (Patient Safety)
+          </p>
+        </div>
+
+        <div class="value-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2931/2931689.png"
+            alt="Fasilitas"
+          />
+          <h3>Fasilitas Modern</h3>
+          <p>
+            Dilengkapi peralatan medis canggih untuk menunjang diagnosis dan
+            perawatan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <h1>Layanan Kami</h1>
+      <div class="service-cards">
+        <div class="card">
+          <img src="images/rajal.jpg" alt="Rawat Jalan" />
+          <h3>Rawat Jalan</h3>
+          <p>
+            Konsultasi dokter dan pemeriksaan kesehatan rutin dengan pelayanan
+            ramah.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/igd.jpg" alt="UGD" />
+          <h3>UGD 24 Jam</h3>
+          <p>Pelayanan gawat darurat siap siaga 24 jam penuh setiap hari.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/lab.jpg" alt="Laboratorium" />
+          <h3>Laboratorium</h3>
+          <p>
+            Pemeriksaan lengkap, akurat, dan cepat untuk menunjang diagnosis
+            medis.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/farmasi.jpg" alt="Farmasi" />
+          <h3>Farmasi</h3>
+          <p>Obat-obatan lengkap, berkualitas, dan sesuai resep dokter.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <h2>Lokasi Kami</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.421279044712!2d114.83548177601921!3d-3.4389012417701514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6810bef6c81f1%3A0x3f001c5adeab92bf!2sRumah%20Sakit%20Umum%20Mawar%20Kota%20Banjarbaru!5e1!3m2!1sid!2sid!4v1760529130916!5m2!1sid!2sid"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div data-include="components/footer.html"></div>
+
+    <!-- Include Script -->
+    <script src="js/include.js"></script>
+
+    <!-- Script Slider -->
+    <script>
+      let slideIndex = 1;
+      let autoSlide;
+
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("slides");
+        const dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) slideIndex = 1;
+        if (n < 1) slideIndex = slides.length;
+
+        for (let i = 0; i < slides.length; i++)
+          slides[i].style.display = "none";
+        for (let i = 0; i < dots.length; i++)
+          dots[i].classList.remove("active");
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+
+        autoSlide = setTimeout(() => showSlides((slideIndex += 1)), 4000);
+      }
+
+      function plusSlides(n) {
+        clearTimeout(autoSlide);
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        clearTimeout(autoSlide);
+        showSlides((slideIndex = n));
+      }
+
+      document.addEventListener("DOMContentLoaded", () =>
+        showSlides(slideIndex),
+      );
+    </script>
+  </body>
+</html>

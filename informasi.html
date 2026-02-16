@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rumah Sakit Umum Mawar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <div data-include="components/navbar.html"></div>
+
+  <!-- ========== Judul Utama (Background Full) ========== -->
+  <h1 class="bgjudul">Informasi Rumah Sakit Umum Mawar</h1>
+
+  <!-- ========== Informasi ========== -->
+<section class="informasi-section">
+  <div class="info-container">
+    
+    <!-- Kolom Kiri: Informasi Rumah Sakit -->
+    <div class="info-detail">
+      <h2>Rumah Sakit Umum Mawar</h2>
+      <p><strong>Alamat:</strong><br>
+      Jl. Panglima Batur No. 52<br>
+      Kelurahan Mentaos<br>
+      Kecamatan Banjarbaru Selatan <br>
+      Kota Banjarbaru</p>
+<br>
+<br>
+      <p><strong>Nomor Telepon:</strong><br>
+      (0511) 6120022</p>
+<br>
+<br>
+      <p><strong>Nomor WhatsApp:</strong><br>
+      <a href="https://wa.me/6281352587014" target="_blank">+62 8135-2587-014</a></p>
+<br>
+<br>
+      <p><strong>Email:</strong><br>
+      <a href="mailto:rumahsakitumummawar@gmail.com">rumahsakitumummawar@gmail.com</a></p>
+    </div>
+
+    <!-- Kolom Kanan: Form Kirim Pesan -->
+    <div class="info-form">
+      <h3>Kirim Pesan</h3>
+      <form action="mailto:rumahsakitumummawar@gmail.com" method="post" enctype="text/plain">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Alamat Email Anda</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telepon">Nomor Telepon</label>
+        <input type="text" id="telepon" name="telepon">
+
+        <label for="subject">Subjek</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="pesan">Isi Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ========== Footer ========== -->
+  <div data-include="components/footer.html"></div>
+
+  <!-- ========== Script Include ========== -->
+  <script src="js/include.js"></script>
+
+</body>
+</html>

@@ -1,18 +1,23 @@
-// include.js - versi sederhana
+// include.js - versi fix Hostinger
 function includeHTML() {
-  const elements = document.querySelectorAll('[data-include]');
+  const elements = document.querySelectorAll("[data-include]");
 
-  elements.forEach(el => {
-    const file = el.getAttribute('data-include');
-    
+  elements.forEach((el) => {
+    const file = el.getAttribute("data-include");
+
     if (file) {
-      fetch(file)
-        .then(response => response.text())
-        .then(data => {
+      fetch("/" + file) // FIX untuk hosting
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("File tidak ditemukan: " + file);
+          }
+          return response.text();
+        })
+        .then((data) => {
           el.innerHTML = data;
           initBurgerMenu();
         })
-        .catch(error => {
+        .catch((error) => {
           console.error("Error loading file:", error);
         });
     }
@@ -22,18 +27,14 @@ function includeHTML() {
 function initBurgerMenu() {
   const burger = document.getElementById("burger");
   const navMenu = document.getElementById("nav-menu");
-  
+
   if (burger && navMenu) {
-    // Hapus event listener lama jika ada
-    burger.onclick = null;
-    
-    // Tambahkan event listener baru
-    burger.onclick = function() {
+    burger.onclick = function (e) {
+      e.stopPropagation();
       navMenu.classList.toggle("active");
     };
-    
-    // Tutup menu saat klik di luar
-    document.addEventListener('click', function(event) {
+
+    document.addEventListener("click", function (event) {
       if (!burger.contains(event.target) && !navMenu.contains(event.target)) {
         navMenu.classList.remove("active");
       }
@@ -41,5 +42,4 @@ function initBurgerMenu() {
   }
 }
 
-// Jalankan saat halaman dimuat
 document.addEventListener("DOMContentLoaded", includeHTML);

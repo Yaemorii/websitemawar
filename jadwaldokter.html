@@ -1,95 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rumah Sakit Umum Mawar</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumah Sakit Umum Mawar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/LogoMawar.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/LogoMawar.png"
+    />
+  </head>
 
-<body>
+  <body>
+    <div data-include="components/navbar.html"></div>
 
-  <!-- ========== Navbar ========== -->
-  <div data-include="components/navbar.html"></div>
+    <h1 class="bgjudul">Jadwal Dokter Rumah Sakit Umum Mawar</h1>
 
-  <!-- ========== Judul Utama (Background Full) ========== -->
-  <h1 class="bgjudul">Jadwal Dokter Rumah Sakit Umum Mawar</h1>
-
-  <!-- ========== Jadwal Dokter ========== -->
-<section class="jadwaldokter-section">
-    <div class="container">
+    <section class="jadwaldokter-section">
+      <div class="container">
+        <!-- ================= DOKTER SPESIALIS ================= -->
+        <h2 class="judul-sub">Dokter Spesialis</h2>
 
         <div class="tabel-jadwal-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dokter</th>
-                        <th>Spesialisasi</th>
-                        <th>Hari Praktik</th>
-                        <th>Jam Praktik</th>
-                        <th>Keterangan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Dokter" class="dokter-info">
-                            <img src="images/dr.ramli.png" alt="Foto Dokter A" class="dokter-foto">
-                            <div class="dokter-nama">dr. Ramli Junus, Sp.PD</div>
-                        </td>
-                        <td data-label="Spesialisasi">Penyakit Dalam</td>
-                        <td data-label="Hari Praktik">Senin,Kamis, Sabtu</td>
-                        <td data-label="Jam Praktik">10:30 - 12:00 WITA</td>
-                        <td data-label="Keterangan">Home Dokter</td>
-                    </tr>
-                    
-                    <tr>
-                        <td data-label="Dokter" class="dokter-info">
-                            <img src="images/dr.vikha.png" alt="Foto Dokter B" class="dokter-foto">
-                            <div class="dokter-nama">dr. Vickha Dian Hapsari, Sp.A</div>
-                        </td>
-                        <td data-label="Spesialisasi">Dokter Anak</td>
-                        <td data-label="Hari Praktik">
-                            Senin s/d Jumat
-                        </td>
-                        <td data-label="Jam Praktik">07:00 - 08:00 WITA</td>
-                         <!-- ==========<td data-label="Jam Praktik">
-                            15:00 - 18:00 WITA <br>
-                            09:00 - 12:00 WITA
-                        </td> ========== -->
-                        <td data-label="Keterangan">Home Dokter</td>
-                    </tr>
+          <table>
+            <thead>
+              <tr>
+                <th>Dokter</th>
+                <th>Spesialisasi</th>
+                <th>Hari Praktik</th>
+                <th>Jam Praktik</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.ramli.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Ramli Junus, Sp.PD</div>
+                </td>
+                <td data-label="Spesialisasi">Penyakit Dalam</td>
+                <td data-label="Hari Praktik">Selasa, Kamis, Sabtu</td>
+                <td data-label="Jam Praktik">10:30 - 12:00 WITA</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
 
-                    <tr>
-                        <td data-label="Dokter" class="dokter-info">
-                            <img src="images/drgalfian.png" alt="Foto Dokter B" class="dokter-foto">
-                            <div class="dokter-nama">drg. Alfian Noor Rahmat</div>
-                        </td>
-                        <td data-label="Spesialisasi">Dokter Gigi</td>
-                        <td data-label="Hari Praktik">
-                            Jumat <br>
-                            Sabtu
-                        </td>
-                         <td data-label="Jam Praktik">
-                            14:00 - 21:00 WITA <br>
-                            10:00 - 16:00 WITA
-                        </td>
-                        <td data-label="Keterangan">Home Dokter</td>
-                    </tr>
-                    
-                    </tbody>
-            </table>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.vikha.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Vickha Dian Hapsari, Sp.A</div>
+                </td>
+                <td data-label="Spesialisasi">Anak</td>
+                <td data-label="Hari Praktik">Senin s/d Jumat</td>
+                <td data-label="Jam Praktik">07:00 - 08:00 WITA</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.DennisYapari.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Dennis Yapari, Sp.B</div>
+                </td>
+                <td data-label="Spesialisasi">Bedah</td>
+                <td data-label="Hari Praktik">Senin, Selasa, Kamis</td>
+                <td data-label="Jam Praktik">13:00 - 15:00 WITA</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Hasna.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Hasna Hanifah, Sp.PD</div>
+                </td>
+                <td data-label="Spesialisasi">Penyakit Dalam</td>
+                <td data-label="Hari Praktik">Senin, Rabu, Jumat</td>
+                <td data-label="Jam Praktik">09:00 - 12:00 WITA</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Pradhika.png" class="dokter-foto" />
+                  <div class="dokter-nama">
+                    dr. Pradhika Perdana Sakti, Sp.JP
+                  </div>
+                </td>
+                <td data-label="Spesialisasi">Jantung dan Pembuluh Darah</td>
+                <td data-label="Hari Praktik">Senin, Rabu, Jumat</td>
+                <td data-label="Jam Praktik">16:00 - 19:00 WITA</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Priza.png" class="dokter-foto" />
+                  <div class="dokter-nama">
+                    dr. Muhammad Priza Baktiar, Sp.OG
+                  </div>
+                </td>
+                <td data-label="Spesialisasi">Kandungan</td>
+                <td data-label="Hari Praktik">Selasa dan Kamis</td>
+                <td data-label="Jam Praktik">10:00 - 12:00 WITA</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.IanOscar.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Ian Oscar Prima, Sp.B</div>
+                </td>
+                <td data-label="Spesialisasi">Bedah</td>
+                <td data-label="Hari Praktik">Senin, Rabu, Jumat</td>
+                <td data-label="Jam Praktik">20:00 WITA - Selesai</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Edwin.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Edwin Pratama, Sp.An-TI</div>
+                </td>
+                <td data-label="Spesialisasi">
+                  Anestesiologi dan Terapi Intensif
+                </td>
+                <td data-label="Hari Praktik">Mengikuti Jadwal Operasi</td>
+                <td data-label="Jam Praktik">Sesuai Jadwal Operasi</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Burhan.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Burhanuddin Said, Sp.PK</div>
+                </td>
+                <td data-label="Spesialisasi">Patologi Klinik</td>
+                <td data-label="Hari Praktik">-</td>
+                <td data-label="Jam Praktik">-</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Indah.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Indah Rusmiatie, Sp. S</div>
+                </td>
+                <td data-label="Spesialisasi">Saraf</td>
+                <td data-label="Hari Praktik">-</td>
+                <td data-label="Jam Praktik">-</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Suryanto.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Suryanto Lauw, Sp.Rad</div>
+                </td>
+                <td data-label="Spesialisasi">Radiologi</td>
+                <td data-label="Hari Praktik">-</td>
+                <td data-label="Jam Praktik">-</td>
+                <td data-label="Keterangan">Umum, BPJS dan Asuransi</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
-        <p class="catatan-jadwal">*Jadwal dapat berubah sewaktu-waktu. Mohon konfirmasi ke pihak rumah sakit sebelum kunjungan
-        Telepon : 0511-6120022 | WhatsApp : 0813-5258-7014.</p>
-    </div>
-</section>
 
-  <!-- ========== Footer ========== -->
-  <div data-include="components/footer.html"></div>
+        <!-- ================= DOKTER UMUM ================= -->
+        <h2 class="judul-sub">Dokter Umum</h2>
 
-  <!-- ========== Script Include ========== -->
-  <script src="js/include.js"></script>
+        <div class="tabel-jadwal-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Dokter</th>
+                <th>Keterangan Praktik</th>
+                <th>Layanan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/dr.Anita.png" class="dokter-foto" />
+                  <div class="dokter-nama">dr. Noor Anita Rahmalia</div>
+                </td>
+                <td data-label="Keterangan Praktik">
+                  Praktik setiap hari (Sistem Shift)
+                </td>
+                <td data-label="Layanan">Umum, BPJS dan Asuransi</td>
+              </tr>
 
-</body>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img
+                    src="images/dr.Silvia Novitasari.png"
+                    class="dokter-foto"
+                  />
+                  <div class="dokter-nama">dr. Silvia Novitasari</div>
+                </td>
+                <td data-label="Keterangan Praktik">
+                  Praktik setiap hari (Sistem Shift)
+                </td>
+                <td data-label="Layanan">Umum, BPJS dan Asuransi</td>
+              </tr>
+              <tr>
+                <td data-label="Dokter" class="dokter-info">
+                  <img src="images/drgalfian.png" class="dokter-foto" />
+                  <div class="dokter-nama">drg. Alfian Noor Rahmat</div>
+                </td>
+                <td data-label="Keterangan Praktik">
+                  Jumat (14:00 - 21:00 WITA)<br />
+                  Sabtu (10:00 - 16:00 WITA)
+                </td>
+                <td data-label="Layanan">Umum, BPJS dan Asuransi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="catatan-jadwal">
+          *Jadwal dapat berubah sewaktu-waktu. Mohon konfirmasi ke pihak rumah
+          sakit sebelum kunjungan. Telepon: 0511-6120022 | WhatsApp:
+          0813-5258-7014.
+        </p>
+      </div>
+    </section>
+
+    <div data-include="components/footer.html"></div>
+    <script src="js/include.js"></script>
+  </body>
 </html>

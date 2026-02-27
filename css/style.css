@@ -62,12 +62,10 @@ body {
 }
 
 .logo img {
-  height: 80px;       /* ubah sesuai kebutuhan */
-  width: auto;        /* biar proporsional */
+  height: 80px; /* ubah sesuai kebutuhan */
+  width: auto; /* biar proporsional */
   display: block;
 }
-
-
 
 /* =====================================================
    DROPDOWN MENU
@@ -123,7 +121,9 @@ body {
   padding: 10px 15px;
   color: #333;
   text-decoration: none;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -136,29 +136,28 @@ body {
 ===================================================== */
 /* Tambahkan styling placeholder untuk tombol toggle jika HTML ditambahkan */
 .menu-toggle {
-    display: none; /* Default disembunyikan di desktop */
-    cursor: pointer;
-    font-size: 2rem;
-    color: #ff4141;
-    line-height: 1;
-    padding: 5px 10px;
-    border: none;
-    background: transparent;
-    z-index: 101;
+  display: none; /* Default disembunyikan di desktop */
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ff4141;
+  line-height: 1;
+  padding: 5px 10px;
+  border: none;
+  background: transparent;
+  z-index: 101;
 }
 
 /* =====================================================
    RESPONSIVE LAYOUT (<= 768px)
 ===================================================== */
 @media (max-width: 768px) {
-  
   /* 1. Navbar: Tata letak Logo dan Placeholder Hamburger berdampingan */
   .navbar {
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
-  
+
   /* 2. Tampilkan Placeholder Tombol Hamburger */
   .menu-toggle {
     display: block;
@@ -167,18 +166,18 @@ body {
   /* 3. Sembunyikan Menu Utama secara default */
   .navbar ul {
     /* Posisi menu agar turun ke bawah, mengambil lebar penuh */
-    position: static; 
-    top: 100%; 
+    position: static;
+    top: 100%;
     left: 0;
     right: 0;
     width: 100%;
-    
+
     /* Layout Menu menjadi vertikal */
     flex-direction: column;
     text-align: left;
-    background: #fff; 
+    background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    
+
     /* Mekanisme Sembunyi/Tampil */
     max-height: none; /* Menu tersembunyi */
     overflow: visible;
@@ -199,7 +198,7 @@ body {
 
   /* 5. Styling Item Menu Vertikal */
   .navbar li {
-    padding: 0 1.5rem; 
+    padding: 0 1.5rem;
     border-bottom: 1px solid #eee;
     width: 100%;
   }
@@ -207,16 +206,16 @@ body {
   .navbar li:last-child {
     border-bottom: none;
   }
-  
+
   .navbar a {
     width: 100%;
-    padding: 12px 0; 
+    padding: 12px 0;
   }
-  
+
   /* 6. Dropdown Menu (Sub-menu) di Mobile */
   .dropdown-content {
     /* Buat sub-menu tidak melayang, tapi langsung mengikuti alur */
-    position: static; 
+    position: static;
     opacity: 1;
     visibility: visible;
     transform: none;
@@ -230,17 +229,16 @@ body {
   }
 
   .dropdown-content a {
-    padding-left: 30px; 
-    background-color: #f8f8f8; 
+    padding-left: 30px;
+    background-color: #f8f8f8;
     border-bottom: 1px solid #eee;
   }
-  
+
   /* Hilangkan panah dropdown */
   .dropdown > a::after {
     content: none;
   }
 }
-
 
 /* =====================================================
    RESPONSIVE NAVBAR
@@ -272,8 +270,6 @@ body {
     padding-left: 20px;
   }
 }
-
-
 
 /* =====================================================
    HERO SLIDER
@@ -490,7 +486,9 @@ body {
   color: #0078d7;
   border-radius: 30px;
   text-decoration: none;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .btn-secondary:hover {
@@ -622,12 +620,14 @@ body {
 .social-icons img {
   width: 34px;
   height: 34px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
   opacity: 0.8;
   border-radius: 50%;
   background: white;
   padding: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons img:hover {
@@ -663,7 +663,6 @@ body {
   height: 18px;
   flex-shrink: 0;
 }
-
 
 /* Responsif */
 @media (max-width: 768px) {
@@ -722,7 +721,7 @@ body {
   width: 600px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sambutan-teks {
@@ -743,7 +742,6 @@ body {
   font-weight: 500;
 }
 
-
 .bgjudul {
   position: relative;
   left: 50%;
@@ -751,7 +749,7 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background-image: url('/images/bgheader.jpg');
+  background-image: url("/images/bgheader.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -768,7 +766,7 @@ body {
 
   .sambutan-foto img {
     /* Pastikan gambar menyesuaikan lebar container */
-    width: 100%; 
+    width: 100%;
     max-width: 400px; /* Batasi lebar agar tidak terlalu besar di tablet */
     height: auto;
   }
@@ -893,7 +891,7 @@ body {
 .map-box {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   padding: 15px;
@@ -952,7 +950,7 @@ body {
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .info-detail h2 {
@@ -973,7 +971,7 @@ body {
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .info-form h3 {
@@ -1025,1259 +1023,1338 @@ body {
 
 /* GLOBAL/UTILITIES */
 .section-padding {
-    padding: 80px 0; /* Padding atas bawah untuk spasi yang cukup */
+  padding: 80px 0; /* Padding atas bawah untuk spasi yang cukup */
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* JUDUL SECTION */
 .section-title {
-    font-size: 2.5em;
-    color: #1a4a7e; /* Warna gelap, profesional */
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 700;
+  font-size: 2.5em;
+  color: #1a4a7e; /* Warna gelap, profesional */
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 .section-subtitle {
-    font-size: 1.1em;
-    color: #666;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 50px;
-    line-height: 1.6;
+  font-size: 1.1em;
+  color: #666;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
 }
 
 /* GRID LAYANAN (Penting untuk tampilan rapi) */
 .layanan-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 kolom di desktop */
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* 3 kolom di desktop */
+  gap: 30px;
 }
 
 /* KARTU LAYANAN */
 .layanan-card {
-    background-color: #fff;
-    border: 1px solid #eee;
-    padding: 30px;
-    border-radius: 8px; /* Sudut sedikit melengkung */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 30px;
+  border-radius: 8px; /* Sudut sedikit melengkung */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
 }
 .layanan-card:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Bayangan sedikit lebih kuat saat dihover */
-    transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Bayangan sedikit lebih kuat saat dihover */
+  transform: translateY(-5px);
 }
 
 /* IKON */
 .card-icon {
-    font-size: 2.5em;
-    color: #007bff; /* Warna aksen/primary */
-    margin-bottom: 15px;
+  font-size: 2.5em;
+  color: #007bff; /* Warna aksen/primary */
+  margin-bottom: 15px;
 }
 
 .card-title {
-    font-size: 1.4em;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .card-text {
-    color: #777;
-    margin-bottom: 20px;
-    line-height: 1.5;
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 /* BUTTON DETAIL */
 .btn-detail {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.2s;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
 }
 .btn-detail:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 /* KARTU SOROTAN (HIGHLIGHT) */
 .card-highlight {
-    background-color: #e6f0ff; /* Background lebih terang */
-    border-left: 5px solid #007bff; /* Garis aksen vertikal */
+  background-color: #e6f0ff; /* Background lebih terang */
+  border-left: 5px solid #007bff; /* Garis aksen vertikal */
 }
 
 /* CTA (Call to Action) */
 .cta-rawatjalan {
-    text-align: center;
-    margin-top: 50px;
-    padding: 30px;
-    background-color: #f7f9fc;
-    border-radius: 8px;
-    border: 1px solid #e0e6f0;
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  border: 1px solid #e0e6f0;
 }
 .btn-cta {
-    display: inline-block;
-    background-color: #28a745; /* Warna hijau untuk aksi utama (Booking/Jadwal) */
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-top: 15px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  background-color: #28a745; /* Warna hijau untuk aksi utama (Booking/Jadwal) */
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background-color 0.3s;
 }
 .btn-cta:hover {
-    background-color: #1e7e34;
+  background-color: #1e7e34;
 }
 
 /* =====================================================
-   JADWAL DOKTER SECTION
+   JADWAL DOKTER SECTION - VERSI MOBILE FRIENDLY
 ===================================================== */
 .jadwaldokter-section {
-    padding: 60px 5%;
-    background-color: #ffffff;
+  padding: 60px 5%;
+  background-color: #ffffff;
 }
 
 .jadwaldokter-section .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .judul-jadwal {
-    text-align: center;
-    color: #ff4141;
-    font-size: 2rem;
-    margin-bottom: 10px;
+  text-align: center;
+  color: #ff4141;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .subjudul-jadwal {
-    text-align: center;
-    color: #555;
-    margin-bottom: 30px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
 }
 
-/* Styling Tabel */
+/* Styling Tabel Desktop */
 .tabel-jadwal-wrapper {
-    overflow-x: auto; /* scroll horizontal jika layar kecil */
+  overflow-x: auto;
 }
 
 .tabel-jadwal-wrapper table {
-    width: 100%;
-    min-width: 600px;
-    border-collapse: collapse;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .tabel-jadwal-wrapper th,
 .tabel-jadwal-wrapper td {
-    padding: 15px;
-    border: 1px solid #eee;
-    vertical-align: middle;
+  padding: 15px;
+  border: 1px solid #eee;
+  vertical-align: middle;
 }
 
 .tabel-jadwal-wrapper th {
-    background-color: #ff4141;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center; /* ✅ Judul tabel rata tengah */
+  background-color: #ff4141;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.tabel-jadwal-wrapper td {
-    text-align: left;
-}
-
-.tabel-jadwal-wrapper tr:nth-child(even) {
-    background-color: #fcfcfc;
-}
-
-/* Styling Info Dokter (Foto + Nama) */
+/* Styling Info Dokter */
 .dokter-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
 }
 
 .dokter-foto {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 2px solid #ddd;
+  width: 220px;        /* bebas mau berapa */
+  aspect-ratio: 1 / 1; /* bikin selalu kotak */
+  border-radius: 16px; /* rounded kotak */
+  border: 3px solid #ff4141;
+  object-fit: cover;
+  display: block;
 }
 
 .dokter-nama {
-    color: #333;
+  color: #333;
 }
-
-.catatan-jadwal {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #777;
-    margin-top: 20px;
-}
-
 
 /* =====================================================
-   Responsif Tabel (Stacks Vertically on Small Screens)
+   TAMPILAN MOBILE KHUSUS UNTUK JADWAL DOKTER
 ===================================================== */
-@media screen and (max-width: 600px) {
-    /* Di layar kecil, hapus min-width agar tabel bisa menyesuaikan */
-    .tabel-jadwal-wrapper table {
-        min-width: initial;
-        width: 100%;
-        display: block;
-        border: none;
-    }
+@media screen and (max-width: 768px) {
+  /* Sembunyikan header tabel di mobile */
+  .tabel-jadwal-wrapper thead {
+    display: none;
+  }
 
-    .tabel-jadwal-wrapper thead {
-        display: none; /* Sembunyikan header tabel di mobile */
-    }
+  /* Buat setiap baris menjadi card */
+  .tabel-jadwal-wrapper tr {
+    display: block;
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
 
-    .tabel-jadwal-wrapper tr {
-        display: block;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 10px;
-        background-color: white !important;
-    }
+  /* Setiap sel menjadi block */
+  .tabel-jadwal-wrapper td {
+    display: block;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    position: relative;
+  }
 
-    .tabel-jadwal-wrapper td {
-        display: block;
-        text-align: right;
-        padding: 8px 15px;
-        border: none;
-        position: relative;
-    }
-    
-    /* Menampilkan label header di setiap baris data */
-    .tabel-jadwal-wrapper td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 15px;
-        font-weight: bold;
-        color: #ff4141;
-    }
+  /* Hapus border-bottom untuk sel terakhir */
+  .tabel-jadwal-wrapper td:last-child {
+    border-bottom: none;
+  }
 
-    .dokter-info {
-        justify-content: flex-end; /* Pindahkan info dokter ke kanan */
-    }
-    .dokter-info::before {
-        content: attr(data-label) !important;
-        position: absolute;
-        left: 15px;
-        font-weight: bold;
-        color: #ff4141;
-    }
+  /* Tambahkan label sebelum konten */
+  .tabel-jadwal-wrapper td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 700;
+    color: #ff4141;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+  }
+
+  /* ===== PERBAIKAN KHUSUS UNTUK KOLOM DOKTER ===== */
+  .tabel-jadwal-wrapper td.dokter-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0 20px 0;
+    border-bottom: 2px solid #ff4141;
+    margin-bottom: 10px;
+  }
+
+  /* Hapus pseudo-element untuk kolom dokter */
+  .tabel-jadwal-wrapper td.dokter-info::before {
+    display: none;
+  }
+
+  /* Atur ulang ukuran foto dokter di mobile */
+  .dokter-foto {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid #ff4141;
+  }
+
+  /* Nama dokter */
+  .dokter-nama {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  /* Untuk kolom lainnya, beri jarak */
+  .tabel-jadwal-wrapper td:not(.dokter-info) {
+    padding-left: 0;
+  }
+
+  /* Styling untuk konten setiap kolom */
+  .tabel-jadwal-wrapper td:not(.dokter-info) {
+    font-size: 1rem;
+    color: #555;
+    padding: 12px 0 12px 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    margin: 8px 0;
+  }
+
+  /* Catatan jadwal */
+  .catatan-jadwal {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff3f3;
+    border-radius: 8px;
+    border-left: 4px solid #ff4141;
+  }
+}
+
+/* =====================================================
+   TAMPILAN UNTUK LAYAR SANGAT KECIL (HP)
+===================================================== */
+@media screen and (max-width: 480px) {
+  .tabel-jadwal-wrapper tr {
+    padding: 15px;
+  }
+
+  /* Kolom dokter jadi vertikal di layar sangat kecil */
+  .tabel-jadwal-wrapper td.dokter-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .dokter-foto {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .dokter-nama {
+    text-align: center;
+  }
+
+  .tabel-jadwal-wrapper td:not(.dokter-info) {
+    padding: 10px;
+  }
+
+  .tabel-jadwal-wrapper td::before {
+    font-size: 0.8rem;
+  }
 }
 
 /* =====================================================
    RAWAT INAP SECTION
 ===================================================== */
 .rawatinap-section {
-    padding: 60px 5%;
-    background-color: #f7f9fb;
-    text-align: center; /* agar teks di dalam section rata tengah */
+  padding: 60px 5%;
+  background-color: #f7f9fb;
+  text-align: center; /* agar teks di dalam section rata tengah */
 }
 
 .rawatinap-section .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: center; /* pastikan semua isi dalam container juga rata tengah */
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center; /* pastikan semua isi dalam container juga rata tengah */
 }
 
 /* Judul */
 .section-title {
-    color: #ff4141;
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    font-weight: 700;
+  color: #ff4141;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .section-subtitle {
-    color: #555;
-    margin-bottom: 40px;
-    font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
 }
 
 /* Gallery Styling */
 .gallery-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center; /* konten galeri rata tengah */
-    margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* konten galeri rata tengah */
+  margin-bottom: 50px;
 }
 
 .gallery-item {
-    flex: 1 1 300px;
-    max-width: 350px; /* batasi lebar agar proporsional di tengah */
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 350px; /* batasi lebar agar proporsional di tengah */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .gallery-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery-caption {
-    padding: 20px;
+  padding: 20px;
 }
 
 .gallery-caption h3 {
-    color: #333;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
 }
 
 .gallery-caption p {
-    color: #777;
-    font-size: 0.95rem;
+  color: #777;
+  font-size: 0.95rem;
 }
 
 .divider {
-    border: 0;
-    height: 1px;
-    background: #eee;
-    margin: 40px auto;
-    width: 80%; /* agar garis divider juga rata tengah */
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 40px auto;
+  width: 80%; /* agar garis divider juga rata tengah */
 }
 
 /* Detail Layanan Grid */
 .layanan-detail-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center; /* layanan blok rata tengah */
-    margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* layanan blok rata tengah */
+  margin-bottom: 50px;
 }
 
 .layanan-block {
-    flex: 1 1 300px;
-    max-width: 350px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border-left: 5px solid #ff4141;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    text-align: left; /* isi teks dalam block tetap rata kiri agar mudah dibaca */
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-left: 5px solid #ff4141;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: left; /* isi teks dalam block tetap rata kiri agar mudah dibaca */
 }
 
 .block-title {
-    color: #ff4141;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    font-weight: 600;
+  color: #ff4141;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* List */
 .list-checkmark,
 .list-ordered {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .list-checkmark li {
-    padding-left: 25px;
-    position: relative;
-    margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 8px;
 }
 
 .list-checkmark li::before {
-    content: "✓";
-    color: #28a745;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .list-ordered {
-    counter-reset: item;
+  counter-reset: item;
 }
 
 .list-ordered li {
-    counter-increment: item;
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
+  counter-increment: item;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
 }
 
 .list-ordered li::before {
-    content: counter(item) ".";
-    color: #ff4141;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
+  content: counter(item) ".";
+  color: #ff4141;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Call to Action */
 .cta-rawatinap {
-    text-align: center;
-    padding: 30px;
-    background-color: #ffeaea;
-    border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffeaea;
+  border-radius: 10px;
 }
 
 .cta-rawatinap p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff4141;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff4141;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #e63939;
+  background-color: #e63939;
 }
 
 /* Responsif */
 @media (max-width: 992px) {
-    .layanan-detail-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    .layanan-block {
-        flex: 1 1 100%;
-        max-width: 500px;
-    }
+  .layanan-detail-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .layanan-block {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 600px) {
-    .gallery-wrapper {
-        gap: 20px;
-    }
-    .gallery-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
+  .gallery-wrapper {
+    gap: 20px;
+  }
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
-
 
 /* =====================================================
    INSTALASI GAWAT DARURAT (IGD) SECTION
 ===================================================== */
 .igd-section {
-    padding: 60px 5%;
-    background-color: #f0f4f7; /* Latar belakang sedikit berbeda untuk menekankan */
+  padding: 60px 5%;
+  background-color: #f0f4f7; /* Latar belakang sedikit berbeda untuk menekankan */
 }
 
 .igd-section .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .igd-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-    color: #cc0000; /* Warna merah darurat */
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 5px;
+  color: #cc0000; /* Warna merah darurat */
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 5px;
 }
 
 .section-subtitle {
-    color: #555;
-    font-size: 1.1rem;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* Keunggulan Grid */
 .igd-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .igd-feature-block {
-    flex: 1 1 300px;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-top: 5px solid #ff4141;
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #ff4141;
 }
 
 .igd-feature-block i {
-    font-size: 2.5rem;
-    color: #ff4141;
-    display: block;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #ff4141;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .igd-feature-block h3 {
-    color: #333;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .igd-feature-block p {
-    color: #777;
-    font-size: 0.95rem;
+  color: #777;
+  font-size: 0.95rem;
 }
 
 /* Alur Pelayanan */
 .alur-pelayanan {
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: #e8eef3;
-    border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #e8eef3;
+  border-radius: 10px;
 }
 
 .alur-title {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    border-bottom: 2px dashed #ccc;
-    padding-bottom: 10px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 10px;
 }
 
 .alur-steps {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .alur-steps .step {
-    flex: 1 1 250px;
-    text-align: center;
-    position: relative;
-    padding-bottom: 10px;
+  flex: 1 1 250px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .step-number {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    background-color: #ff4141;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #ff4141;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .step h4 {
-    color: #333;
-    margin-bottom: 5px;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 /* Call to Action (CTA) */
 .igd-cta {
-    text-align: center;
-    padding: 30px;
-    background-color: #ff4141;; /* Latar belakang merah kuat */
-    color: white;
-    border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: #ff4141; /* Latar belakang merah kuat */
+  color: white;
+  border-radius: 10px;
 }
 
 .igd-cta p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .cta-igd-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: white;
-    color: #ff4141;;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: white;
+  color: #ff4141;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
 }
 
 .cta-igd-button:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
 }
 
 .igd-note {
-    margin-top: 15px;
-    font-size: 0.9rem;
-    opacity: 0.9;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 /* Responsif */
 @media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
-    .igd-grid, .alur-steps {
-        flex-direction: column;
-    }
-    .igd-feature-block, .alur-steps .step {
-        flex: 1 1 100%;
-    }
-    .alur-title {
-        font-size: 1.5rem;
-    }
-    .cta-igd-button {
-        font-size: 1rem;
-        padding: 12px 25px;
-    }
+  .section-title {
+    font-size: 2rem;
+  }
+  .igd-grid,
+  .alur-steps {
+    flex-direction: column;
+  }
+  .igd-feature-block,
+  .alur-steps .step {
+    flex: 1 1 100%;
+  }
+  .alur-title {
+    font-size: 1.5rem;
+  }
+  .cta-igd-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
 }
 
 /* =====================================================
    KAMAR OPERASI SECTION
 ===================================================== */
 .kamaroperasi-section {
-    padding: 60px 5%;
-    background-color: #f7f9fb;
+  padding: 60px 5%;
+  background-color: #f7f9fb;
 }
 
 .kamaroperasi-section .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .operasi-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-    color: #ff4141;; /* Warna Biru/Teal untuk kesan profesional/medis */
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+  color: #ff4141; /* Warna Biru/Teal untuk kesan profesional/medis */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
-    color: #555;
-    font-size: 1.1rem;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* Visual dan Image */
 .operasi-visual {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .operasi-main-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Keunggulan Grid */
 .operasi-keunggulan-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .keunggulan-item {
-    flex: 1 1 300px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-bottom: 4px solid #ff4141;;
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid #ff4141;
 }
 
 .keunggulan-item i {
-    font-size: 2rem;
-    color: #ff4141;;
-    display: block;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  color: #ff4141;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .keunggulan-item h3 {
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .keunggulan-item p {
-    color: #777;
-    font-size: 0.9rem;
+  color: #777;
+  font-size: 0.9rem;
 }
 
 /* Layanan Bedah List */
 .layanan-bedah-list {
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: #ffe8e8;
-    border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #ffe8e8;
+  border-radius: 10px;
 }
 
 .list-title {
-    color: #ff4141;;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    text-align: center;
+  color: #ff4141;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .jenis-operasi {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .jenis-operasi li {
-    background-color: #ffffff;
-    padding: 8px 15px;
-    border-radius: 50px;
-    border: 1px solid #ffcccc;
-    font-size: 0.9rem;
-    color: #333;
-    font-weight: 500;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: 1px solid #ffcccc;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
 }
 
 /* Call to Action (CTA) */
 .operasi-cta {
-    text-align: center;
-    padding: 30px;
-    background-color: #ffffff;
-    border: 2px dashed #ff4141;;
-    border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px dashed #ff4141;
+  border-radius: 10px;
 }
 
 .operasi-cta p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .cta-operasi-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff4141; /* Menggunakan warna aksen merah */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff4141; /* Menggunakan warna aksen merah */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .cta-operasi-button:hover {
-    background-color: #ff4141;;
+  background-color: #ff4141;
 }
 
 /* Responsif */
 @media (max-width: 768px) {
-    .operasi-keunggulan-grid {
-        flex-direction: column;
-    }
-    .keunggulan-item {
-        flex: 1 1 100%;
-    }
-    .jenis-operasi {
-        justify-content: flex-start;
-    }
+  .operasi-keunggulan-grid {
+    flex-direction: column;
+  }
+  .keunggulan-item {
+    flex: 1 1 100%;
+  }
+  .jenis-operasi {
+    justify-content: flex-start;
+  }
 }
 
 /* =====================================================
    LABORATORIUM SECTION
 ===================================================== */
 .lab-section {
-    padding: 60px 5%;
-    background-color: #ffffff;
+  padding: 60px 5%;
+  background-color: #ffffff;
 }
 
 .lab-section .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .lab-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-    color: #00bcd4; /* Warna Teal/Cyan untuk kesan sains/laboratorium */
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+  color: #00bcd4; /* Warna Teal/Cyan untuk kesan sains/laboratorium */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
-    color: #555;
-    font-size: 1.1rem;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* Info Grid */
 .lab-grid-info {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .lab-info-block {
-    flex: 1 1 300px;
-    background: #f7fbfd;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-bottom: 4px solid #00bcd4;
+  flex: 1 1 300px;
+  background: #f7fbfd;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid #00bcd4;
 }
 
 .lab-info-block i {
-    font-size: 2.5rem;
-    color: #00bcd4;
-    display: block;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #00bcd4;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .lab-info-block h3 {
-    color: #333;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .lab-info-block p {
-    color: #777;
-    font-size: 0.95rem;
+  color: #777;
+  font-size: 0.95rem;
 }
 
 /* Daftar Layanan Pemeriksaan */
 .layanan-pemeriksaan {
-    margin-bottom: 50px;
-    padding: 30px;
-    background-color: #f7fbfd;
-    border-radius: 10px;
-    border: 1px solid #e0f7fa;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #f7fbfd;
+  border-radius: 10px;
+  border: 1px solid #e0f7fa;
 }
 
 .list-title {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .pemeriksaan-list-columns {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .pemeriksaan-list {
-    list-style: none;
-    padding: 0;
-    flex: 1;
+  list-style: none;
+  padding: 0;
+  flex: 1;
 }
 
 .pemeriksaan-list li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #eee;
-    color: #555;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+  color: #555;
 }
 
 .pemeriksaan-list li::before {
-    content: "•";
-    color: #00bcd4;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  content: "•";
+  color: #00bcd4;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .divider {
-    border: 0;
-    height: 1px;
-    background: #e0f0f0;
-    margin: 40px 0;
+  border: 0;
+  height: 1px;
+  background: #e0f0f0;
+  margin: 40px 0;
 }
 
 /* Call to Action (CTA) */
 .lab-cta {
-    text-align: center;
-    padding: 30px;
-    background-color: #e0f7fa;
-    border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
 }
 
 .lab-cta p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .cta-lab-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff4141; /* Menggunakan warna aksen merah */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff4141; /* Menggunakan warna aksen merah */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .cta-lab-button:hover {
-    background-color: #e63939;
+  background-color: #e63939;
 }
 
 /* Responsif */
 @media (max-width: 768px) {
-    .lab-grid-info {
-        flex-direction: column;
-    }
-    .lab-info-block {
-        flex: 1 1 100%;
-    }
-    .pemeriksaan-list-columns {
-        flex-direction: column;
-    }
+  .lab-grid-info {
+    flex-direction: column;
+  }
+  .lab-info-block {
+    flex: 1 1 100%;
+  }
+  .pemeriksaan-list-columns {
+    flex-direction: column;
+  }
 }
 
 /* =====================================================
    RADIOLOGI SECTION
 ===================================================== */
 .radiologi-section {
-    padding: 60px 5%;
-    background-color: #f7f9fb;
+  padding: 60px 5%;
+  background-color: #f7f9fb;
 }
 
 .radiologi-section .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .radiologi-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-    color: #004d99; /* Warna Biru Tua untuk kesan teknologi/kredibel */
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+  color: #004d99; /* Warna Biru Tua untuk kesan teknologi/kredibel */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
-    color: #555;
-    font-size: 1.1rem;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* Keunggulan Grid */
 .radiologi-keunggulan-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .radiologi-keunggulan-grid .keunggulan-item {
-    flex: 1 1 300px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-bottom: 4px solid #004d99;
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid #004d99;
 }
 
 .radiologi-keunggulan-grid .keunggulan-item i {
-    font-size: 2.5rem;
-    color: #004d99;
-    display: block;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #004d99;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .radiologi-keunggulan-grid .keunggulan-item h3 {
-    color: #333;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .radiologi-keunggulan-grid .keunggulan-item p {
-    color: #777;
-    font-size: 0.95rem;
+  color: #777;
+  font-size: 0.95rem;
 }
 
 /* Daftar Layanan Radiologi */
 .layanan-radiologi-list {
-    margin-bottom: 50px;
-    padding: 30px;
-    background-color: #e6f0ff;
-    border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #e6f0ff;
+  border-radius: 10px;
 }
 
 .list-title {
-    color: #004d99;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
+  color: #004d99;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .pencitraan-list-columns {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .layanan-list {
-    list-style: none;
-    padding: 0;
-    flex: 1;
+  list-style: none;
+  padding: 0;
+  flex: 1;
 }
 
 .layanan-list li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #c0d8f0;
-    color: #555;
+  padding: 8px 0;
+  border-bottom: 1px dashed #c0d8f0;
+  color: #555;
 }
 
 .layanan-list li::before {
-    content: "•";
-    color: #004d99;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  content: "•";
+  color: #004d99;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .divider {
-    border: 0;
-    height: 1px;
-    background: #e0e0e0;
-    margin: 40px 0;
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 40px 0;
 }
 
 /* Call to Action (CTA) */
 .radiologi-cta {
-    text-align: center;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 2px solid #004d99;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #004d99;
 }
 
 .radiologi-cta p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .cta-radiologi-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff4141; /* Menggunakan warna aksen merah */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff4141; /* Menggunakan warna aksen merah */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .cta-radiologi-button:hover {
-    background-color: #e63939;
+  background-color: #e63939;
 }
 
 /* Responsif */
 @media (max-width: 768px) {
-    .radiologi-keunggulan-grid {
-        flex-direction: column;
-    }
-    .radiologi-keunggulan-grid .keunggulan-item {
-        flex: 1 1 100%;
-    }
-    .pencitraan-list-columns {
-        flex-direction: column;
-    }
+  .radiologi-keunggulan-grid {
+    flex-direction: column;
+  }
+  .radiologi-keunggulan-grid .keunggulan-item {
+    flex: 1 1 100%;
+  }
+  .pencitraan-list-columns {
+    flex-direction: column;
+  }
 }
 
 /* =====================================================
    FARMASI SECTION
 ===================================================== */
 .farmasi-section {
-    padding: 60px 5%;
-    background-color: #f7f9fb;
+  padding: 60px 5%;
+  background-color: #f7f9fb;
 }
 
 .farmasi-section .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .farmasi-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-    color: #008000; /* Warna Hijau untuk kesan kesehatan/obat alami */
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+  color: #008000; /* Warna Hijau untuk kesan kesehatan/obat alami */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
-    color: #555;
-    font-size: 1.1rem;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* Keunggulan Grid */
 .farmasi-keunggulan-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .farmasi-keunggulan-grid .keunggulan-item {
-    flex: 1 1 300px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-bottom: 4px solid #008000;
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid #008000;
 }
 
 .farmasi-keunggulan-grid .keunggulan-item i {
-    font-size: 2.5rem;
-    color: #008000;
-    display: block;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #008000;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .farmasi-keunggulan-grid .keunggulan-item h3 {
-    color: #333;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .farmasi-keunggulan-grid .keunggulan-item p {
-    color: #777;
-    font-size: 0.95rem;
+  color: #777;
+  font-size: 0.95rem;
 }
 
 /* Layanan Farmasi Tambahan */
 .alur-pelayanan-farmasi {
-    margin-bottom: 50px;
-    padding: 30px;
-    background-color: #e6ffe6; /* Latar belakang hijau muda */
-    border-radius: 10px;
-    border: 1px solid #ccffcc;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #e6ffe6; /* Latar belakang hijau muda */
+  border-radius: 10px;
+  border: 1px solid #ccffcc;
 }
 
 .alur-title {
-    color: #008000;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
+  color: #008000;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .layanan-farmasi-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .layanan-box {
-    flex: 1 1 250px;
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  flex: 1 1 250px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 .layanan-box h4 {
-    color: #333;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    border-bottom: 2px solid #008000;
-    display: inline-block;
-    padding-bottom: 3px;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #008000;
+  display: inline-block;
+  padding-bottom: 3px;
 }
 
 .layanan-box p {
-    font-size: 0.9rem;
-    color: #555;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 /* Call to Action (CTA) */
 .farmasi-cta {
-    text-align: center;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 2px solid #008000;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #008000;
 }
 
 .farmasi-cta p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .cta-farmasi-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff4141; /* Menggunakan warna aksen merah */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff4141; /* Menggunakan warna aksen merah */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .cta-farmasi-button:hover {
-    background-color: #e63939;
+  background-color: #e63939;
 }
 
 /* Responsif */
 @media (max-width: 768px) {
-    .farmasi-keunggulan-grid, .layanan-farmasi-list {
-        flex-direction: column;
-    }
-    .farmasi-keunggulan-grid .keunggulan-item, .layanan-box {
-        flex: 1 1 100%;
-    }
+  .farmasi-keunggulan-grid,
+  .layanan-farmasi-list {
+    flex-direction: column;
+  }
+  .farmasi-keunggulan-grid .keunggulan-item,
+  .layanan-box {
+    flex: 1 1 100%;
+  }
 }
 
 /* ================================= */
@@ -2332,7 +2409,7 @@ body {
     background: #ffffff;
     padding-top: 80px; /* Kurangi padding top */
     transition: right 0.3s ease;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     z-index: 1000;
   }
@@ -2397,26 +2474,25 @@ body {
   }
 }
 
-  /* Overlay saat sidebar aktif */
-  .navbar::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
-  }
+/* Overlay saat sidebar aktif */
+.navbar::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
 
-  .navbar.active::after {
-    opacity: 1;
-    visibility: visible;
-  }
-
+.navbar.active::after {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* Tablet dengan lebar lebih kecil */
 @media (max-width: 768px) {
@@ -2439,11 +2515,11 @@ body {
   #nav-menu {
     width: 220px;
   }
-  
+
   .burger {
     padding: 8px;
   }
-  
+
   .burger span {
     width: 22px;
     height: 2.5px;
@@ -2452,7 +2528,6 @@ body {
 
 /* FORCE SIDEBAR MOBILE */
 @media (max-width: 992px) {
-
   #nav-menu {
     position: fixed;
     top: 0;
@@ -2474,5 +2549,200 @@ body {
     max-height: none;
     overflow: visible;
   }
+}
 
+/* ===================================== */
+/* OPTIMASI KHUSUS ANDROID / HP KECIL */
+/* ===================================== */
+@media (max-width: 480px) {
+  /* Judul utama background */
+  .bgjudul {
+    padding: 50px 15px;
+    font-size: 1.4rem;
+  }
+
+  /* Section padding lebih kecil */
+  .section-padding {
+    padding: 50px 15px;
+  }
+
+  /* Judul dan subtitle lebih proporsional */
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  /* Grid jadi 1 kolom full */
+  .layanan-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Card lebih kecil dan rapat */
+  .layanan-card {
+    padding: 20px;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* CTA lebih kecil */
+  .cta-rawatjalan {
+    padding: 20px;
+  }
+
+  .btn-cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===================================== */
+/* RESPONSIVE RAWAT INAP - MOBILE */
+/* ===================================== */
+@media (max-width: 480px) {
+  /* Judul background */
+  .bgjudul {
+    padding: 50px 15px;
+    font-size: 1.4rem;
+  }
+
+  /* Section lebih compact */
+  .rawatinap-section {
+    padding: 50px 15px;
+  }
+
+  /* Gallery jadi 1 kolom */
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Gambar tidak terlalu tinggi */
+  .gallery-image {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Caption lebih kecil */
+  .gallery-caption h3 {
+    font-size: 1.1rem;
+  }
+
+  .gallery-caption p {
+    font-size: 0.9rem;
+  }
+
+  /* Divider */
+  .divider {
+    margin: 40px 0;
+  }
+
+  /* Detail layanan jadi 1 kolom */
+  .layanan-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .layanan-block {
+    padding: 20px;
+  }
+
+  .block-title {
+    font-size: 1.1rem;
+  }
+
+  .list-checkmark li,
+  .list-ordered li {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================= */
+/* FIX OVERFLOW MOBILE */
+/* ============================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Gallery 1 kolom full */
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Detail layanan jadi 1 kolom */
+  .layanan-detail-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .layanan-block {
+    width: 100%;
+  }
+}
+
+/* ===== Sub Judul ===== */
+.judul-sub {
+  margin: 50px 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  border-left: 5px solid #c62828;
+  padding-left: 12px;
+}
+
+/* ===== Kolom Keterangan Lebih Rapi ===== */
+td[data-label="Keterangan"] {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* ===== Supaya tabel tidak terlalu mepet ===== */
+.tabel-jadwal-wrapper {
+  overflow-x: auto;
+}
+.badge {
+  display: inline-block;
+  background: #c62828;
+  color: white;
+  padding: 4px 8px;
+  margin: 2px;
+  font-size: 12px;
+  border-radius: 5px;
 }

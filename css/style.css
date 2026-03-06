@@ -1193,7 +1193,7 @@ body {
 }
 
 .dokter-foto {
-  width: 220px;        /* bebas mau berapa */
+  width: 220px; /* bebas mau berapa */
   aspect-ratio: 1 / 1; /* bikin selalu kotak */
   border-radius: 16px; /* rounded kotak */
   border: 3px solid #ff4141;
@@ -2745,4 +2745,128 @@ td[data-label="Keterangan"] {
   margin: 2px;
   font-size: 12px;
   border-radius: 5px;
+}
+
+/* .indikator-section {
+  padding: 60px 10%;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.indikator-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+} */
+
+.indikator-section {
+  padding: 60px 20px;
+  background-color: #f4f6f9;
+}
+
+.intro-indikator {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.indikator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.indikator-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.indikator-card:hover {
+  transform: translateY(-5px);
+}
+
+.indikator-card ul {
+  padding-left: 18px;
+}
+
+.indikator-card li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.indikator-card h3 i {
+  margin-right: 8px;
+}
+
+/* tombol */
+.kontak-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* DARURAT - MERAH */
+.darurat h3 i {
+  color: #e53935;
+}
+
+.darurat .kontak-btn {
+  background: #e53935;
+}
+
+.darurat .kontak-btn:hover {
+  background: #c62828;
+}
+
+/* WHATSAPP - HIJAU */
+.whatsapp h3 i {
+  color: #25d366;
+}
+
+.whatsapp .kontak-btn {
+  background: #25d366;
+}
+
+.whatsapp .kontak-btn:hover {
+  background: #1ebe5d;
+}
+
+/* EMAIL - BIRU */
+.email h3 i {
+  color: #1e88e5;
+}
+
+.email .kontak-btn {
+  background: #1e88e5;
+}
+
+.email .kontak-btn:hover {
+  background: #1565c0;
+}
+
+/* INSTAGRAM - GRADIENT */
+.instagram h3 i {
+  background: linear-gradient(45deg, #833ab4, #e1306c, #f77737, #fccc63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.instagram .kontak-btn {
+  background: linear-gradient(45deg, #833ab4, #e1306c, #f77737, #fccc63);
+}
+
+.instagram .kontak-btn:hover {
+  opacity: 0.9;
 }
